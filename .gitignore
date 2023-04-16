@@ -1,0 +1,25 @@
+# Add any directories, files, or patterns you don't want to be tracked by version control
+/storage/*
+/node_modules
+/public/hot
+/public/storage
+/storage/*.key
+/vendor
+package.json
+package-lock.json
+composer.lock
+.env
+.phpunit.result.cache
+Homestead.json
+Homestead.yaml
+npm-debug.log
+yarn-error.log
+.buildpath
+.project
+.settings/
+
+
+bulkmailer.local_error.log
+bulkmailer.local_access.log
+horseflymailer.com (copy).zip
+horseflymailer.com.zip
