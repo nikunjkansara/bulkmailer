@@ -68,7 +68,7 @@
                             @foreach ($plans as $plan)
                                 <div class="price-line">
                                     <div class="price-header">
-                                        <lable class="plan-title">{{ $plan->name }}</lable>
+                                        <lable class="plan-title">Select{{ $plan->name }}</lable>
                                         <p>{{ $plan->description }}</p>
                                     </div>
 

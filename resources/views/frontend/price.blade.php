@@ -27,7 +27,9 @@
                             <div class="price-table">
                         
                                 @foreach ($plans as $plan)
-                                    <div class="price-line current ">
+                                <form name="frmPrice" method="post" action="{{route("price.post")}}" id="frmPrice">
+                                {{ csrf_field() }}    
+                                <div class="price-line current ">
                                         <div class="price-header">
                                             <lable class="plan-title">{{ $plan->name }}</lable>
                                             <p>{{ $plan->description }}</p>
@@ -40,15 +42,33 @@
                                             </div>
                                             <div>{{ $plan->displayFrequencyTime() }}</div>
                                             
-                                           
-                                                <a
-                                                    href="#"
-                                                    class="btn btn-mc_primary btn-mc_mk mt-30">
-                                                        {{ trans('messages.plan.select') }}
-                                                </a>
-                                            
+                                            <input type="hidden" name="userId" value="{{isset($subscription->user_id)?$subscription->user_id:''}}"/>
+                                            <input type="hidden" name="planId" value="{{$plan->uid}}"/>
+                                            <input type="hidden" name="returnUrl" value="{{action('AccountSubscriptionController@index')}}" \>
+                                            @if(!Auth::user())
+                                            <button                                                 
+                                                class="btn btn-mc_primary btn-mc_mk mt-30">
+                                                    {{ trans('messages.plan.select') }}
+                                            </button>
+                                            @else
+                                                @if ($subscription->plan->uid == $plan->uid)
+                                                    <a
+                                                        href="javascript:;"
+                                                        class="btn btn-mc_default mt-30" disabled>
+                                                            {{ trans('messages.plan.current_subscribed') }}
+                                                    </a>
+                                                @else
+                                                    <a
+                                                        href="{{ $gateway->getChangePlanUrl($subscription, $plan->uid, action('AccountSubscriptionController@index')) }}"
+                                                        class="btn btn-mc_primary btn-mc_mk mt-30">
+                                                            {{ trans('messages.plan.select') }}
+                                                    </a>
+                                                @endif
+                                            @endif
+
                                         </div>
                                     </div>
+                                </form>
                                 @endforeach
                             
                             </div>

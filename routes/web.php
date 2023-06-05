@@ -107,6 +107,7 @@ Route::get('contect-us', 'HomeController@contect')->name('contect-us');
 Route::get('about-us', 'HomeController@aboutus')->name('about-us');
 Route::get('price', 'HomeController@price')->name('price');
 
+
 // Setting upload path
 Route::get('setting/{filename}', 'SettingController@file');
 Route::get('/no-plan', 'AccountSubscriptionController@noPlan');
@@ -193,6 +194,8 @@ Route::group(['middleware' => ['not_installed']], function () {
 });
 
 Route::group(['middleware' => ['not_installed', 'auth', 'frontend']], function () {
+    
+    
     // Account subscription
     Route::get('subscription/pending', 'AccountSubscriptionController@pending');
     Route::get('subscription/checkout', 'AccountSubscriptionController@checkout');
@@ -237,6 +240,10 @@ Route::group(['middleware' => ['not_installed', 'auth', 'frontend']], function (
 });
 
 Route::group(['middleware' => ['not_installed', 'auth', 'frontend', 'subscription']], function () {
+    // Choose Subscriptions
+    Route::get('make-payment', 'HomeController@payment')->name('price.post');
+    Route::post('make-payment', 'HomeController@makePayment')->name('price.post');
+    
     Route::get('/dashboard', 'HomeController@dashboard')->name('dashboard');
     Route::get('frontend/docs/api/v1', 'Controller@docsApiV1');
     Route::get('/current_user_uid', 'UserController@showUid');
@@ -244,8 +251,8 @@ Route::group(['middleware' => ['not_installed', 'auth', 'frontend', 'subscriptio
     // Update current user profile
     Route::get('account/api/renew', 'AccountController@renewToken');
     Route::get('account/api', 'AccountController@api');    
-    Route::get('account/subscription', 'AccountController@subscription');
-    Route::get('account/subscription/new', 'AccountController@subscriptionNew');
+    Route::get('account/subscription', 'AccountController@subscription')->name('subscription');
+    Route::get('account/subscription/new', 'AccountController@subscriptionNew')->name('subscription.new');
 
     // User avatar
     Route::get('assets/images/avatar/user-{uid?}.jpg', 'UserController@avatar');

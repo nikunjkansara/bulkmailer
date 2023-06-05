@@ -177,7 +177,7 @@ class AccountController extends Controller
     public function subscription(Request $request)
     {
         $customer = $request->user()->customer;
-
+        
         // Get current subscription
         $subscription = $customer->getCurrentSubscriptionIgnoreStatus();
         
