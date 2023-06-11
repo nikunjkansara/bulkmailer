@@ -1,6 +1,6 @@
 <header id="header" class="fixed-top header-transparent">
 	<div
-		class="container d-flex align-items-center justify-content-between">
+		class="container d-flex align-items-center ">
 
 		<div class="logo">
 			<!-- <h1 class="text-light"><a href="index.html"><span>Squadfree</span></a></h1>-->
@@ -16,7 +16,11 @@
 				<li><a class="nav-link scrollto" href="{{ route('price') }}">Price</a></li>
 				<li><a class="nav-link scrollto" href="{{ route('about-us') }}">About Us</a></li>
 				<li><a class="nav-link scrollto" href="{{ route('contect-us') }}">Contact</a></li>
+				@if(\Auth::user())
+				<li><a class="nav-link scrollto" href="{{ URL('logout') }}">Logout</a></li>
+				@else
 				<li><a class="nav-link scrollto" href="{{ URL('login') }}">Login</a></li>
+				@endif
 			</ul>
 			<i class="bi bi-list mobile-nav-toggle"></i>
 		</nav>

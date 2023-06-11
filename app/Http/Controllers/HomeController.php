@@ -76,12 +76,10 @@ class HomeController extends Controller
     }
 
     public function makePayment(Request $request) {
-        dd(route('subscription.new'));
         return redirect(route('subscription.new')); 
     }
 
     public function payment() {
-        return redirect(route('subscription.new')); 
         return redirect(route('price'));
     }
 }

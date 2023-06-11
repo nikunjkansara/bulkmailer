@@ -79,22 +79,25 @@ h1, h2, h3, h4, h5, h6 {
 	z-index: 997;
 	transition: all 0.5s;
 	padding: 24px 0;
-	background: rgba(103, 176, 209, 0.8);
+	background: rgba(0, 0, 0, 0.5);
 }
 
 #header.header-transparent {
-	background: rgba(103, 176, 209, 0.8);
+	background: rgba(0, 0, 0, 0.5);
 }
 
 #header.sub-page-header {
-	background: rgba(55, 142, 181, 0.9);
+	background: rgba(0, 0, 0, 0.5);
 }
 
 #header.header-scrolled {
-	background: rgba(55, 142, 181, 0.9);
+	background: rgba(0, 0, 0, 0.5);
 	padding: 12px;
 }
-
+.logo {
+	width: 200px;
+	margin-right: 100px;
+}
 #header .logo h1 {
 	font-size: 24px;
 	margin: 0;
