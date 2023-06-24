@@ -421,7 +421,7 @@ h1, h2, h3, h4, h5, h6 {
 # Sections General
 --------------------------------------------------------------*/
 section {
-	padding: 60px 0;
+	/*padding: 60px 0;*/
 	overflow: hidden;
 }
 
@@ -436,7 +436,7 @@ section {
 
 .section-title {
 	text-align: center;
-	padding-bottom: 30px;
+	/* padding-bottom: 30px; */
 }
 
 .section-title h2 {
@@ -516,7 +516,7 @@ section {
 .about {
 	background: url("../img/about-bg.jpg") center center no-repeat;
 	background-size: cover;
-	padding: 60px 0;
+	/*padding: 60px 0;*/
 	position: relative;
 }
 

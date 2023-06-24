@@ -281,6 +281,7 @@ class PaypalController extends Controller
         
         if ($request->isMethod('post')) {
             // add transaction
+            echo  $subscription->ends_at." <<>> ". $subscription->current_period_ends_at;
             $transaction = $subscription->addTransaction(SubscriptionTransaction::TYPE_RENEW, [
                 'ends_at' => $subscription->ends_at,
                 'current_period_ends_at' => $subscription->current_period_ends_at,
@@ -331,6 +332,7 @@ class PaypalController extends Controller
             
             // renew
             $subscription->renew();
+            //echo  $subscription->ends_at." <<>> ". $subscription->current_period_ends_at;exit;
 
             // set success
             $transaction->setSuccess();

@@ -29,12 +29,11 @@
 					data-aos="fade-up">
 					<div class="content">
 						<h3>Free Bulk Email Services</h3>
-						<p>With a free bulk email service, you can send marketing emails
-							to your mass list without the headache. Free mass email software
-							isn’t worth much if it can’t reliably land your message in your
-							subscriber list’s inboxes or if it has a lackluster support team.
-							So what are the features that separate the best free email
-							senders from the so-so free plans?</p>
+						<p>Horsefly Mailer provides free bulk email services to offer a cost-effective solution for businesses to send a large volume of emails. They can help reach a wide audience, promote products or services, and engage customers.
+						However, it's important to consider limitations such as restricted features, lower deliverability rates, and potential branding or advertising within emails.
+Free bulk email services providers offer businesses a cost-effective solution for reaching a large audience with their email marketing campaigns. These services allow users to send a high volume of emails without incurring additional expenses. 
+The benefits include increased brand visibility, the ability to promote products or services to a wide customer base, and the potential for higher website traffic and conversions.
+						</p>
 						<a href="#" class="about-btn">About us <i
 							class="bx bx-chevron-right"></i></a>
 					</div>

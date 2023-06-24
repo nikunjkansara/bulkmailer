@@ -14,24 +14,22 @@
         </div>
 
         <div class="row content">
-          <div class="col-lg-6">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
+          <div class="col-lg-12">
+            <p>             
+Free bulk email services providers offer businesses a cost-effective solution for reaching a large audience with their email marketing campaigns. These services allow users to send a high volume of emails without incurring additional expenses. The benefits include increased brand visibility, the ability to promote products or services to a wide customer base, and the potential for higher website traffic and conversions.
             </p>
-            <ul>
-              <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat</li>
-              <li><i class="ri-check-double-line"></i> Duis aute irure dolor in reprehenderit in voluptate velit</li>
-              <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat</li>
-            </ul>
+</div>
+          <div class="col-lg-6"> 
+            <h2>Our Story:</h2> 
+            <p>Horsefly Mailer was born out of a passion for empowering businesses to connect with their audience in a meaningful and impactful way. With a team of dedicated experts in email marketing and cutting-edge technology, we set out to create a platform that would simplify and optimize the entire email marketing process.</p>
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0">
+            <h2>What We Do:</h2>
             <p>
-              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-              culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-            <a href="#" class="btn-learn-more">Learn More</a>
+            We provide businesses of all sizes with a comprehensive suite of tools and features to execute successful bulk email campaigns. 
+            Our platform enables you to effortlessly manage and organize your email lists, design captivating email templates, and schedule and automate email sends. 
+            We also offer advanced segmentation and personalization options to ensure that your messages resonate with your target audience.
+            </p>            
           </div>
         </div>
 

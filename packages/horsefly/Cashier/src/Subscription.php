@@ -401,7 +401,8 @@ class Subscription extends Model
      */
     public function nextPeriod()
     {
-        $endsAt = $this->current_period_ends_at;
+        // $endsAt = $this->current_period_ends_at;
+        $endsAt = $this->getPeriodEndsAt(\Carbon\Carbon::now());
         $interval = $this->plan->getBillableInterval();
         $intervalCount = $this->plan->getBillableIntervalCount();
 
